@@ -2,7 +2,14 @@
 A list of all the Git Commands that I find useful
 
 ## Status
+
+### Current branch status
 git status
+
+## Branches
+
+### Create and checkout new branch
+git checkout -b newbranch
 
 
 ## Unstaged Changes
