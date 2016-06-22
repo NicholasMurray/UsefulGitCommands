@@ -11,7 +11,6 @@ git status
 ### Create and checkout new branch
 git checkout -b newbranch
 
-
 ## Unstaged Changes
 
 ### Discard a file with unstaged changes
@@ -19,3 +18,9 @@ git checkout path/to/file/to/revert
 
 ### Discard all unstaged changes
 git checkout -- .
+
+
+## Merging
+
+### To exit a merge
+git reset --merge
