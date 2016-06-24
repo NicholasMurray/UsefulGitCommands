@@ -11,8 +11,8 @@ git status
 ### Create and checkout new branch
 git checkout -b newbranch
 
-### Delete local branch
-git branch -d the_local_branch
+### Delete unmerged local branch
+git branch -D the_local_branch
 
 ## Unstaged Changes
 
