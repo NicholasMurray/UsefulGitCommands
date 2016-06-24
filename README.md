@@ -1,4 +1,4 @@
-# UsefulGitCommands
+# Useful Git Commands
 A list of all the Git Commands that I find useful
 
 ## Status
@@ -10,6 +10,9 @@ git status
 
 ### Create and checkout new branch
 git checkout -b newbranch
+
+### Delete local branch
+git branch -d the_local_branch
 
 ## Unstaged Changes
 
