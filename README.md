@@ -14,6 +14,9 @@ git checkout -b newbranch
 ### Delete unmerged local branch
 git branch -D the_local_branch
 
+### Rename current local branch
+git branch -m newname
+
 ## Unstaged Changes
 
 ### Discard a file with unstaged changes
