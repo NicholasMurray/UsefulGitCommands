@@ -11,6 +11,9 @@ git status
 ### Create and checkout new branch
 git checkout -b newbranch
 
+### Create and checkout a new branch from a branch
+git checkout -b newbranch devbranch
+
 ### Delete unmerged local branch
 git branch -D the_local_branch
 
