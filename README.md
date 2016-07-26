@@ -38,3 +38,8 @@ git reset --merge
 ### Untracking a file that is already tracked
 git rm --cached path/to/file/to/stop/tracking
 git commit -m "Removed file that shouldn't be tracked"
+
+## Remotes
+
+### Print your remotes' fetch/push URLs.
+git remote -v
