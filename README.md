@@ -28,8 +28,13 @@ git checkout path/to/file/to/revert
 ### Discard all unstaged changes
 git checkout -- .
 
-
 ## Merging
 
 ### To exit a merge
 git reset --merge
+
+## Tracking
+
+### Untracking a file that is already tracked
+git rm --cached path/to/file/to/stop/tracking
+git commit -m "Removed file that shouldn't be tracked"
