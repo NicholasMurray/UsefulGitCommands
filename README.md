@@ -28,6 +28,11 @@ git checkout path/to/file/to/revert
 ### Discard all unstaged changes
 git checkout -- .
 
+## Commits
+
+### View all commit messages in current branch
+git cherry -v master
+
 ## Merging
 
 ### To exit a merge
