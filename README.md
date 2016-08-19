@@ -30,6 +30,9 @@ git checkout -- .
 
 ## Commits
 
+### Add and commit all modified files, but not newly created files
+git commit -am  "commit message"
+
 ### View all commit messages in current branch
 git cherry -v master
 
