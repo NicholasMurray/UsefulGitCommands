@@ -28,6 +28,9 @@ git checkout path/to/file/to/revert
 ### Discard all unstaged changes
 git checkout -- .
 
+### Discard all uncommmited changes
+git reset --hard
+
 ## Commits
 
 ### Add and commit all modified files, but not newly created files
