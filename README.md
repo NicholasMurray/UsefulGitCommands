@@ -36,6 +36,13 @@ git commit -am  "commit message"
 ### View all commit messages in current branch
 git cherry -v master
 
+## Diffs
+
+### Compare diffs side by side
+
+git difftool
+Launch 'opendiff' [Y/n]: Y
+
 ## Merging
 
 ### To exit a merge
