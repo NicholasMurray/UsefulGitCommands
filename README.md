@@ -41,6 +41,7 @@ git cherry -v master
 ### Compare diffs side by side
 
 git difftool
+
 Launch 'opendiff' [Y/n]: Y
 
 ## Merging
