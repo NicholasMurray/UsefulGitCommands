@@ -21,8 +21,8 @@ git branch -D the_local_branch
 git branch -m newname
 
 ### Pull down all local remote branches
-git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
-git fetch --all
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done  
+git fetch --all  
 git pull --all
 
 ## Unstaged Changes
@@ -47,9 +47,7 @@ git cherry -v master
 ## Diffs
 
 ### Compare diffs side by side
-
-git difftool
-
+git difftool  
 Launch 'opendiff' [Y/n]: Y
 
 ## Merging
@@ -60,7 +58,7 @@ git reset --merge
 ## Tracking
 
 ### Untracking a file that is already tracked
-git rm --cached path/to/file/to/stop/tracking
+git rm --cached path/to/file/to/stop/tracking  
 git commit -m "Removed file that shouldn't be tracked"
 
 ## Remotes
