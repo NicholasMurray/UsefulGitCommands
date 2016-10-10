@@ -20,6 +20,11 @@ git branch -D the_local_branch
 ### Rename current local branch
 git branch -m newname
 
+### Pull down all local remote branches
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git fetch --all
+git pull --all
+
 ## Unstaged Changes
 
 ### Discard a file with unstaged changes
