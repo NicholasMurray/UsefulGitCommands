@@ -1,6 +1,11 @@
 # Useful Git Commands
 A list of all the Git Commands that I find useful
 
+## Repository
+
+### Working with a remote repository
+git remote add upstream git://github.com/diaspora/diaspora.git
+
 ## Status
 
 ### Current branch status
