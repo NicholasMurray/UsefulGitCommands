@@ -39,6 +39,12 @@ git checkout -- .
 ### Discard all uncommmited changes
 git reset --hard
 
+### Delete unstaged local files
+#### Show files that will be deleted
+git clean -f -n 
+#### Delete files
+git clean -f
+
 ## Commits
 
 ### Add and commit all modified files, but not newly created files
