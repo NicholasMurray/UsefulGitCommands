@@ -33,6 +33,15 @@ git branch -r | grep -v '\->' | while read remote; do git branch --track "${remo
 git fetch --all  
 git pull --all
 
+### View all local branches including hidden branches
+git branch -a
+
+### View locally the remote branch
+git checkout origin/the_remote_branch
+
+### Work locally with the remote branch
+git checkout -b the_remote_branch origin/the_remote_branch
+
 ## Unstaged Changes
 
 ### Discard a file with unstaged changes
