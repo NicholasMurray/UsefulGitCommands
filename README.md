@@ -42,6 +42,9 @@ git checkout origin/the_remote_branch
 ### Work locally with the remote branch
 git checkout -b the_remote_branch origin/the_remote_branch
 
+### View file differences between two branches
+git diff --name-status branch_one..branch_two
+
 ## Unstaged Changes
 
 ### Discard a file with unstaged changes
