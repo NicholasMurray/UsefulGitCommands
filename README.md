@@ -29,7 +29,6 @@ git branch -m newname
 git push -u origin the_local_branch
 
 ### Pull down all remote branches locally
-git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done  
 git fetch --all  
 git pull --all
 
