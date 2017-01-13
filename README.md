@@ -68,6 +68,9 @@ git clean -f -n
 #### Delete files
 git clean -f
 
+## Undo Add
+git reset
+
 ## Commits
 
 ### Add and commit all modified files, but not newly created files
