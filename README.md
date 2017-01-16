@@ -67,6 +67,8 @@ git reset --hard
 git clean -f -n 
 #### Delete files
 git clean -f
+#### Delete Directories
+git clean -f -d
 
 ## Undo Add
 git reset
