@@ -81,6 +81,28 @@ git commit -am  "commit message"
 ### View all commit messages in current branch
 git cherry -v master
 
+## Revert Commit
+
+### Revert branch to preceeding commit 
+
+#### Verify changes to make
+git log --oneline  
+git checkout HEAD~1  
+git reset hard origin/master  
+
+#### Switch branches to go back to the correct branch
+git checkout development  
+git checkout master  
+git pull  
+
+#### Revert commit and push to remote repository
+git log  
+git revert 9121c997065b043228763356865c307115c47538  
+Type message and then esc, :x  
+git push  
+
+
+
 ## Diffs
 
 ### Compare diffs side by side
