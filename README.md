@@ -50,6 +50,8 @@ git diff --name-status branch_one..branch_two
 ### View line differences in a named file between two branches
 git diff mybranch master -- myfile.css
 
+### View side by side differences in difftool
+git difftool path/to/file
 
 ## Unstaged Changes
 
