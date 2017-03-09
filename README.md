@@ -128,10 +128,20 @@ git commit -am  "commit message"
 
 ### View all commit messages in current branch
 ```
-git cherry -v master
+git cherry -v development current_branch
 ```
 
 ## Revert Commit
+
+### Revert everything from the HEAD back to the commit hash
+
+*This will revert everything from the HEAD back to the commit hash, meaning it will recreate that commit state in the working tree as if every commit since had been walked back. You can then commit the current tree, and it will create a brand new commit essentially equivalent to the commit you "reverted" to.*
+
+
+```
+git revert --no-commit 0766c053..HEAD
+git commit
+```
 
 ### Revert branch to preceeding commit 
 
