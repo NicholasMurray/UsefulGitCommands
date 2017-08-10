@@ -42,6 +42,11 @@ git branch -m newname
 git push -u origin the_local_branch
 ```
 
+### Create local branch that fetchs and tracks remote branch
+```
+git checkout --track origin/the_remote_branch
+```
+
 ### Push local branch with detached head to remote Git repository
 ```
 git push origin HEAD:the_local_branch
