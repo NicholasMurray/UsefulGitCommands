@@ -141,6 +141,11 @@ git commit -am  "commit message"
 git cherry -v development current_branch
 ```
 
+### List all files in commit
+```
+git show --name-only <sha>
+```
+
 ## Revert Commit
 
 ### Revert everything from the HEAD back to the commit hash
