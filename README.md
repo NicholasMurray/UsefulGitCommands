@@ -184,6 +184,47 @@ Type message and then esc, :x
 git push  
 ```
 
+#### Reword current commit message
+
+```
+git commit --amend -m "New commit message"
+git push --force origin current_branch_name
+```
+
+#### Reword previous commit message
+
+List previous commits since branching
+```
+git cherry -v parent_branch
+```
+
+Enter interactive rebase for commit N (where N is the number of commits back)
+```
+git rebase -i HEAD~N
+```
+
+Enable INSERT or Replace mode and type reword as per instructions
+```
+reword
+```
+
+Then escape, write and quit
+```
+esc
+:wq
+```
+
+Edit Commit message then escape, write and quit
+```
+esc
+:wq
+```
+
+To quit the interactive rebase
+```
+esc
+git rebase --abort
+```
 
 ## Diffs
 
