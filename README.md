@@ -226,6 +226,15 @@ esc
 git rebase --abort
 ```
 
+## Rebase
+
+### Pull remote master updates (since branching) into local branch
+
+```
+git pull --rebase origin master
+```
+
+
 ## Diffs
 
 ### Compare diffs side by side
