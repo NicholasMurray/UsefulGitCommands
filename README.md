@@ -152,7 +152,6 @@ git show --name-only <sha>
 
 *This will revert everything from the HEAD back to the commit hash, meaning it will recreate that commit state in the working tree as if every commit since had been walked back. You can then commit the current tree, and it will create a brand new commit essentially equivalent to the commit you "reverted" to.*
 
-
 ```
 git revert --no-commit 0766c053..HEAD
 git commit
@@ -234,6 +233,32 @@ git rebase --abort
 git pull --rebase origin master
 ```
 
+### Undo a rebase
+
+First make a backup 
+```
+git tag BACKUP
+```
+
+If some goes wrong you can run
+```
+git reset --hard BACKUP
+```
+
+Use git relog to find the desired commit
+```
+git reflog
+```
+
+Then reset head to desired commit
+```
+git reset --hard HEAD@{5}
+```
+
+Or alternatively rebase saves your starting point to ORIG_HEAD so this command will revert to pre-rebase state
+```
+git reset --hard ORIG_HEAD
+```
 
 ## Diffs
 
