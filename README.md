@@ -270,6 +270,12 @@ Launch 'opendiff' [Y/n]: Y
 
 ## Merging
 
+### Merge locally
+```
+git checkout local_branch_to_merge_into
+git merge local_branch_to_merge
+```
+
 ### To exit a merge
 ```
 git reset --merge
