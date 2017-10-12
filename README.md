@@ -283,6 +283,23 @@ git reset --merge
 
 ## Tracking
 
+### Remove untracked files and directories
+
+Dry run
+```
+git clean -dn
+```
+
+Perform delete of specfied untracked file or directoty
+```
+git clean -df directory/to/be/untracked/
+```
+
+Perform delete of all untracked
+```
+git clean -df 
+```
+
 ### Untracking a file that is already tracked
 ```
 git rm --cached path/to/file/to/stop/tracking  
