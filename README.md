@@ -15,16 +15,23 @@ git remote add upstream git://github.com/diaspora/diaspora.git
 git status
 ```
 
+## Commits
+
+### To view commits on a branch
+```
+git log --graph the_branch_name
+```
+
 ## Branches
 
 ### Create and checkout new branch
 ```
-git checkout -b newbranch
+git checkout -b new_branch_name
 ```
 
 ### Create and checkout a new branch from a branch
 ```
-git checkout -b newbranch devbranch
+git checkout -b new_branch_name dev_branch
 ```
 
 ### Delete unmerged local branch
@@ -34,7 +41,7 @@ git branch -D the_local_branch
 
 ### Rename current local branch
 ```
-git branch -m newname
+git branch -m new_branch_name
 ```
 
 ### Push local branch to remote Git repository
