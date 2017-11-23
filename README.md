@@ -82,6 +82,11 @@ git checkout -b the_remote_branch origin/the_remote_branch
 
 ## Inspecting Changes with Diffs
 
+### Diff a modified file before staging
+```
+git diff path/to/file
+```
+
 ### List file name and status differences between two branches
 ```
 git diff --name-status branch_one..branch_two
