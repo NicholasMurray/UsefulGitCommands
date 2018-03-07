@@ -293,6 +293,18 @@ git merge local_branch_to_merge
 git reset --merge
 ```
 
+### To undo a local merge
+
+To find commit to revert to
+```
+git log
+```
+
+To revert to previous commit
+```
+git reset --hard hash_of_commit_to_revert_to
+```
+
 ## Tracking
 
 ### Remove untracked files and directories
