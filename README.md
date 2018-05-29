@@ -160,6 +160,12 @@ git show --name-only <sha>
 
 ## Revert Commit
 
+### Revert back one local commit
+
+```
+git reset --hard HEAD~1
+```
+
 ### Revert everything from the HEAD back to the commit hash
 
 *This will revert everything from the HEAD back to the commit hash, meaning it will recreate that commit state in the working tree as if every commit since had been walked back. You can then commit the current tree, and it will create a brand new commit essentially equivalent to the commit you "reverted" to.*
