@@ -10,7 +10,8 @@ git remote add upstream git://github.com/diaspora/diaspora.git
 
 ## Status
 
-### Current branch status
+### Current 
+status
 ```
 git status
 ```
@@ -328,6 +329,13 @@ git clean -df directory/to/be/untracked/
 Perform delete of all untracked
 ```
 git clean -df 
+```
+
+### Overwrite remote with local
+
+Overwrite remote branch with local branch
+```
+git push -f origin the_branch_name
 ```
 
 ### Untracking a file that is already tracked
