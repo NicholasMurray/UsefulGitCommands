@@ -23,6 +23,23 @@ git status
 git log --graph the_branch_name
 ```
 
+### To view commits on a branch pretty printed
+```
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+```
+
+##### To add pretty print alias to your git config
+
+Add alias to config
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
+To view pretty printed commits with an alias
+```
+git lg
+```
+
 ## Branches
 
 ### Create and checkout new branch
