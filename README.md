@@ -88,6 +88,11 @@ git pull --all
 git branch -a
 ```
 
+### List local git branch names, ordered by most recent commit
+```
+git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+```
+
 ### View locally the remote branch
 ```
 git checkout origin/the_remote_branch
