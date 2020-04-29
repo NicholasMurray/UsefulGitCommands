@@ -103,6 +103,16 @@ git checkout origin/the_remote_branch
 git checkout -b the_remote_branch origin/the_remote_branch
 ```
 
+### Enter merge commit message to merge changes from updated remote branch into local branch to enable push
+```
+press "i"
+write your merge message
+press "esc"
+write ":wq"
+then press enter
+```
+
+
 ## Inspecting Changes with Diffs
 
 ### Diff a modified file before staging
